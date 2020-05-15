@@ -1,0 +1,14 @@
+#listings
+id : INT, auto increment
+title : STR
+realtorID : foreignkey[realtor]
+garage : INT
+size : FLOAT
+price : INT
+address : STR, 100
+
+#realtor
+id : INT, autoincrement
+fname : STR, 50
+lname : STR, 50
+phonenumber : STR
