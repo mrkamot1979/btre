@@ -40,7 +40,7 @@
               <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
               <div class="card-img-overlay">
                 <h2>
-                  <span class="badge badge-secondary text-white">${{ listing.price| intcomma }} </span>
+                  <span class="badge badge-secondary text-white">${{ listing.price | intcomma }} </span>
                 </h2>
               </div>
               <div class="card-body">
@@ -52,9 +52,9 @@
                 <hr>
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
-                    <i class="fas fa-th-large"></i> Sqft: 3200</div>
+                    <i class="fas fa-th-large"></i> Sqft: {{ listing.sqft | intcomma }}</div>
                   <div class="col-6">
-                    <i class="fas fa-car"></i> Garage: 2</div>
+                    <i class="fas fa-car"></i> Garage: {{ listing.garage }}</div>
                 </div>
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
