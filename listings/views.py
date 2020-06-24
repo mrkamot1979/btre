@@ -14,7 +14,7 @@ def index(request):
     return render(request, 'listings/listings.html', context) #this line actually returns the listings, as the 'context' variable holds the listings.
 
     
-def listing(request):
+def listing(request, listing_id):
     return render(request, 'listings/listing.html')
 
 def search(request):
