@@ -6,7 +6,7 @@ from .models import Listing #bringin in the Listing model
 
 
 def index(request):
-    listings = Listing.objects.all() #brings in all of the Listings in this one variable.
+    listings = Listing.objects.order_by('-lst_date').filter(is_published=True) #brings in all of the Listings in this one variable.
 
     #code for pagination, where we set the per page at 3.
     paginator = Paginator(listings, 3)
